@@ -22,4 +22,4 @@ Todos los diagramas están en formato HTML interactivo. Puedes verlos haciendo c
 
 ---
 
-> **Nota:** Este repositorio funciona como un sitio estático de GitHub Pages para alojar la documentación del proyecto `sigpaz`. El código fuente principal del sistema se encuentra en el repositorio [andrea-lopez-dev/sigpaz](https://github.com/andrea-lopez-dev/sigpaz).
+> **Nota:** Este repositorio funciona como un sitio estático de GitHub Pages para alojar la documentación del proyecto interactiva `sigpaz`. El código fuente y documentación completa del sistema se encuentra en el repositorio [andrea-lopez-dev/sigpaz](https://github.com/andrea-lopez-dev/sigpaz).
