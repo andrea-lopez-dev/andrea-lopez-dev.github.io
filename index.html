@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación - SIGPAZ</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo-sigpaz.png">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ===== RESET Y VARIABLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* MODO CLARO (Por defecto) */
+        :root {
+            --bg-color: #eef2f7;
+            --glass-bg: rgba(255, 255, 255, 0.35);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --text-color: #1a1a2e;
+            --text-muted: #3a3a5e;
+            --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            --icon-filter: none;
+            --footer-bg: rgba(255, 255, 255, 0.2);
+            --btn-color: #1a1a2e;
+            --subtitle-bg: rgba(255, 255, 255, 0.4);
+            --neon-glow: 0 0 20px rgba(123, 47, 252, 0.5), 0 0 40px rgba(0, 210, 255, 0.3);
+            --btn-glow: 0 0 15px rgba(123, 47, 252, 0.4), 0 0 30px rgba(0, 210, 255, 0.2);
+            /* Colores del Scroll en modo claro */
+            --scroll-track: rgba(255, 255, 255, 0.2);
+            --scroll-thumb: linear-gradient(135deg, #7b2ffc, #00d2ff);
+        }
+
+        /* MODO OSCURO */
+        body.dark-theme {
+            --bg-color: #0b0b14;
+            --glass-bg: rgba(20, 20, 40, 0.65);
+            --glass-border: rgba(255, 255, 255, 0.15);
+            --text-color: #f0f0f5;
+            --text-muted: #b0b0c0;
+            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+            --icon-filter: invert(1) brightness(1.5);
+            --footer-bg: rgba(255, 255, 255, 0.05);
+            --btn-color: #f0f0f5;
+            --subtitle-bg: rgba(0, 0, 0, 0.4);
+            --neon-glow: 0 0 30px rgba(168, 85, 247, 0.6), 0 0 60px rgba(56, 189, 248, 0.4);
+            --btn-glow: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(56, 189, 248, 0.3);
+            /* Colores del Scroll en modo oscuro */
+            --scroll-track: rgba(0, 0, 0, 0.3);
+            --scroll-thumb: linear-gradient(135deg, #a855f7, #38bdf8);
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background 0.4s ease, color 0.4s ease;
+            
+            /* Anti-selección y anti-arrastre */
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* ANTI-F12 Y ANTI-INSPECCIÓN */
+        body * {
+            -webkit-user-drag: none;
+            user-drag: none;
+        }
+
+        /* ===== ESTILOS PROFESIONALES PARA EL SCROLL ===== */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--scroll-track);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            margin: 5px;
+            border: 1px solid var(--glass-border);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--scroll-thumb);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(123, 47, 252, 0.5);
+        }
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #7b2ffc rgba(255, 255, 255, 0.2);
+        }
+        body.dark-theme {
+            scrollbar-color: #a855f7 rgba(0, 0, 0, 0.3);
+        }
+
+        /* ===== FONDO DE PARTÍCULAS ===== */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+            flex: 1;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            margin-bottom: 50px;
+            animation: fadeInDown 0.8s ease;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            width: 160px;
+            height: auto;
+            filter: var(--icon-filter);
+            transition: filter 0.3s ease;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* ===== BOTONES HEADER CON BRILLO DEGRADADO ===== */
+        .header-controls button {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            color: var(--btn-color);
+            padding: 10px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        /* Brillo degradado alrededor del borde al pasar el mouse/dedo */
+        .header-controls button:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+            border-color: transparent;
+            box-shadow: var(--btn-glow);
+        }
+
+        /* ===== TÍTULOS ===== */
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #7b2ffc, #00d2ff, #00ff87);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 50px;
+            background: var(--subtitle-bg);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid var(--glass-border);
+            font-weight: 400;
+        }
+
+        /* ===== TARJETAS ===== */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 30px 20px 25px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--text-color);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 45px 0 rgba(123, 47, 252, 0.3);
+            border-color: rgba(123, 47, 252, 0.5);
+        }
+
+        /* ===== ICONOS (Zoom SUAVE y SUTIL con GLOW) ===== */
+        .card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #7b2ffc, #00d2ff, #00ff87);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            /* Transición muy larga y suave para un efecto sutil */
+            transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: inline-block;
+        }
+
+        .card:hover i {
+            transform: scale(1.12); /* Zoom sutil, no exagerado */
+            filter: drop-shadow(var(--neon-glow));
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        /* ===== BOTÓN VER (La flecha también se acerca) ===== */
+        .card-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #7b2ffc, #00d2ff);
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            width: fit-content;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(123, 47, 252, 0.3);
+        }
+
+        .card-btn i {
+            background: transparent;
+            -webkit-text-fill-color: #fff;
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 0;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            filter: none !important;
+            /* Reseteamos el transform del hover del icono padre para que no interfiera */
+            transform: none !important;
+        }
+
+        .card:hover .card-btn {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(123, 47, 252, 0.5);
+        }
+
+        /* La flecha del botón también se acerca y se desliza */
+        .card:hover .card-btn i {
+            transform: scale(1.2) translateX(5px);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--footer-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid var(--glass-border);
+            padding: 25px 0;
+            text-align: center;
+            margin-top: auto;
+            z-index: 10;
+        }
+
+        footer a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #7b2ffc;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* ===== ANIMACIONES ===== */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== RESPONSIVE (Logo centrado en móviles) ===== */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .logo-container {
+                justify-content: center; /* Centra el logo */
+                width: 100%;
+            }
+            .logo-container img {
+                width: 130px;
+            }
+            .header-controls {
+                justify-content: center;
+                width: 100%;
+            }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; padding: 8px 15px; }
+            .card-btn { padding: 8px 18px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fondo de partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header>
+            <div class="logo-container">
+                <img src="logo-sigpaz.png" alt="Logo SIGPAZ">
+            </div>
+            <div class="header-controls">
+                <button id="themeToggle"><i class="fas fa-moon"></i> <span id="themeText">Tema Oscuro</span></button>
+                <button id="langToggle"><i class="fas fa-language"></i> <span id="langText">English</span></button>
+            </div>
+        </header>
+
+        <!-- Título y Subtítulo -->
+        <div class="hero">
+            <h1 id="mainTitle">Explora los diferentes diagramas</h1>
+            <p id="mainSubtitle">Arquitectura de software y bases de datos a tu alcance</p>
+        </div>
+
+        <!-- Grid de Tarjetas -->
+        <div class="grid-cards">
+            <a href="./docs/diagrams/DIAGRAMA_DE_CASOS_DE_USO.html" target="_blank" class="card">
+                <div>
+                    <i class="fas fa-users-cog"></i>
+                    <h3 id="card1Title">Casos de Uso</h3>
+                    <p id="card1Desc">Interacciones entre actores y el sistema para definir requerimientos funcionales.</p>
+                </div>
+                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="./docs/diagrams/DIAGRAMA_DE_CLASES_COMPLETO.html" target="_blank" class="card">
+                <div>
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 id="card2Title">Diagrama de Clases</h3>
+                    <p id="card2Desc">Estructura estática del sistema, mostrando clases, atributos y relaciones.</p>
+                </div>
+                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="./docs/diagrams/ESQUEMA_DE_LA_BD_ORDENADO.html" target="_blank" class="card">
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h3 id="card3Title">Esquema BD</h3>
+                    <p id="card3Desc">Representación ordenada de las tablas, columnas y tipos de datos de la base.</p>
+                </div>
+                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <a href="./docs/diagrams/MODELO_ER_ORDENADO.html" target="_blank" class="card">
+                <div>
+                    <i class="fas fa-network-wired"></i>
+                    <h3 id="card4Title">Modelo ER</h3>
+                    <p id="card4Desc">Entidades, atributos y relaciones clave para la persistencia de datos.</p>
+                </div>
+                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://github.com/andrea-lopez-dev/sigpaz" target="_blank">
+            <i class="fab fa-github"></i> Repositorio Fuente
+        </a>
+        <p>Todos los derechos reservados a <strong>andrea-lopez-dev</strong></p>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        // 1. PARTÍCULAS REACTIVAS
+        function initParticles(isDark) {
+            const color = isDark ? ["#a855f7", "#38bdf8", "#2dd4bf"] : ["#7b2ffc", "#00d2ff", "#00ff87"];
+            
+            if(window.pJSDom && window.pJSDom[0]) window.pJSDom[0].pJS.fn.vendors.destroyParticles();
+
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": { "value": 120, "density": { "enable": true, "value_area": 800 } },
+                    "color": { "value": color },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.7, "random": true },
+                    "size": { "value": 4, "random": true },
+                    "line_linked": { "enable": true, "distance": 150, "color": color[0], "opacity": 0.4, "width": 1 },
+                    "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": { 
+                        "onhover": { "enable": true, "mode": "grab" },
+                        "onclick": { "enable": true, "mode": "push" }
+                    },
+                    "modes": { 
+                        "grab": { "distance": 200, "line_linked": { "opacity": 1 } },
+                        "push": { "particles_nb": 6 }
+                    }
+                },
+                "retina_detect": true
+            });
+        }
+
+        // 2. LÓGICA DE TEMA
+        const themeToggle = document.getElementById('themeToggle');
+        const themeText = document.getElementById('themeText');
+        const body = document.body;
+        let isDark = false;
+
+        themeToggle.addEventListener('click', () => {
+            isDark = !isDark;
+            body.classList.toggle('dark-theme');
+            
+            if (isDark) {
+                themeText.textContent = 'Tema Claro';
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i> <span id="themeText">Tema Claro</span>';
+            } else {
+                themeText.textContent = 'Tema Oscuro';
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i> <span id="themeText">Tema Oscuro</span>';
+            }
+            initParticles(isDark);
+        });
+
+        // 3. LÓGICA DE IDIOMA
+        const langToggle = document.getElementById('langToggle');
+        const langText = document.getElementById('langText');
+        let isSpanish = true;
+
+        const texts = {
+            es: {
+                title: "Explora los diferentes diagramas",
+                subtitle: "Arquitectura de software y bases de datos a tu alcance",
+                c1t: "Casos de Uso", c1d: "Interacciones entre actores y el sistema para definir requerimientos funcionales.",
+                c2t: "Diagrama de Clases", c2d: "Estructura estática del sistema, mostrando clases, atributos y relaciones.",
+                c3t: "Esquema BD", c3d: "Representación ordenada de las tablas, columnas y tipos de datos de la base.",
+                c4t: "Modelo ER", c4d: "Entidades, atributos y relaciones clave para la persistencia de datos."
+            },
+            en: {
+                title: "Explore the different diagrams",
+                subtitle: "Software architecture and databases at your fingertips",
+                c1t: "Use Cases", c1d: "Interactions between actors and the system to define functional requirements.",
+                c2t: "Class Diagram", c2d: "Static structure of the system, showing classes, attributes and relationships.",
+                c3t: "DB Schema", c3d: "Ordered representation of tables, columns and data types of the database.",
+                c4t: "ER Model", c4d: "Entities, attributes and key relationships for data persistence."
+            }
+        };
+
+        langToggle.addEventListener('click', () => {
+            isSpanish = !isSpanish;
+            const lang = isSpanish ? 'es' : 'en';
+            
+            document.getElementById('mainTitle').textContent = texts[lang].title;
+            document.getElementById('mainSubtitle').textContent = texts[lang].subtitle;
+            document.getElementById('card1Title').textContent = texts[lang].c1t;
+            document.getElementById('card1Desc').textContent = texts[lang].c1d;
+            document.getElementById('card2Title').textContent = texts[lang].c2t;
+            document.getElementById('card2Desc').textContent = texts[lang].c2d;
+            document.getElementById('card3Title').textContent = texts[lang].c3t;
+            document.getElementById('card3Desc').textContent = texts[lang].c3d;
+            document.getElementById('card4Title').textContent = texts[lang].c4t;
+            document.getElementById('card4Desc').textContent = texts[lang].c4d;
+
+            langText.textContent = isSpanish ? 'English' : 'Español';
+        });
+
+        // 4. ANTI F12
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'F12' || 
+                (event.ctrlKey && event.shiftKey && (event.key === 'I' || event.key === 'i')) ||
+                (event.ctrlKey && event.shiftKey && (event.key === 'J' || event.key === 'j')) ||
+                (event.ctrlKey && (event.key === 'U' || event.key === 'u'))) {
+                event.preventDefault();
+                alert('¡Acción no permitida!');
+                return false;
+            }
+        });
+
+        initParticles(false);
+    </script>
+</body>
+</html>
