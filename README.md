@@ -1,7 +1,7 @@
 # 🗂️ Documentación UML y Base de Datos - Proyecto Sigpaz
 
 <p align="center">
-  <img src="./docs/media/logo_sigpaz.png" width="600" alt="Logo del sistema Sigpaz">
+  <img src="./docs/media/logo_sigpaz.png" width="600" alt="logo-sigpaz.png">
 </p>
 
 Este repositorio contiene los diagramas interactivos generados para la documentación del sistema **Sigpaz**.
