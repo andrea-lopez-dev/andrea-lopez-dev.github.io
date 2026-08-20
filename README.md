@@ -25,7 +25,7 @@
 <br>
 
 <!-- ============================================ -->
-<!--          DEMO GIF (DESCOMENTADO)              -->
+<!--          DEMO GIF                             -->
 <!-- ============================================ -->
 <p align="center">
   <img src="docs/media/demo-web.gif" alt="Demo de la web interactiva" width="80%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
@@ -128,27 +128,27 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 <br>
 
 <!-- ============================================ -->
-<!--          BARRAS DE PROGRESO    -->
+<!--  BARRAS PROGRESO DE TECNOLOGÍAS DE DIAGRAMAS  -->
 <!-- ============================================ -->
-<h2>📊 Estado de Desarrollo del Proyecto</h2>
+<h2>📊 Tecnologías utilizadas en los diagramas HTML</h2>
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Diseño_UI_Glassmorphism-100%25-success?style=for-the-badge&logo=figma&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <br>
-  <img src="https://img.shields.io/badge/Diagramas_Interactivos-100%25-success?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <br>
-  <img src="https://img.shields.io/badge/Adaptación_Responsive-100%25-success?style=for-the-badge&logo=googlechrome&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <br>
-  <img src="https://img.shields.io/badge/Documentación_README-100%25-success?style=for-the-badge&logo=readme&logoColor=white">
+  <img src="https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white">
   <br>
-  <img src="https://img.shields.io/badge/Modo_Oscuro_Claro-100%25-success?style=for-the-badge&logo=github&logoColor=white">
-  <br>
-  <img src="https://img.shields.io/badge/Sistema_Multi_Idioma-100%25-success?style=for-the-badge&logo=googletranslate&logoColor=white">
-  <br>
-  <img src="https://img.shields.io/badge/Partículas_Interactivas-100%25-success?style=for-the-badge&logo=javascript&logoColor=white">
+  <img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=white">
 </p>
 
 <br>
 
-```bash
-git clone https://github.com/andrea-lopez-dev/sigpaz.git
+<!-- ============================================ -->
+<!--          NOTA CON ENLACE AL REPOSITORIO       -->
+<!-- ============================================ -->
+> 📌 **Nota: sidesea ver el codigo y el restod e la documentacion pueder dirigirse al respositorio [andrea-lopez-dev/sigpaz](https://github.com/andrea-lopez-dev/sigpaz) que todo se vea hermosos**
+
+<br>
