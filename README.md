@@ -145,26 +145,14 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 </p>
 
 <br>
-
 <!-- ============================================ -->
 <!--          NOTA CON ENLACE AL REPOSITORIO       -->
 <!-- ============================================ -->
-<div align="center">
-  
-  <p style="font-size: 1.1em;">
-    📌 <b>Nota</b>
-  </p>
-  <p>
-    Para revisar el código completo y el resto de la documentación,<br>
-    diríjase al repositorio oficial:
-  </p>
-  <p>
-    <a href="https://github.com/andrea-lopez-dev/sigpaz" style="text-decoration: none;">
-      <b>github.com/andrea-lopez-dev/sigpaz</b>
-    </a>
-  </p>
-  <p style="color: #555; font-size: 0.95em;">
-    ✅ Material estructurado y diseñado para una consulta ágil y eficiente.
-  </p>
-  
-</div>
+
+📌 **Nota**  
+Para revisar el código completo y el resto de la documentación,  
+diríjase al repositorio oficial:  
+
+👉 [**andrea-lopez-dev/sigpaz**](https://github.com/andrea-lopez-dev/sigpaz)  
+
+✅ Material estructurado y diseñado para una consulta ágil y eficiente.
