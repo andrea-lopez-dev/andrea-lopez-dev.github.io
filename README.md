@@ -134,74 +134,23 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 <!-- ============================================ -->
 <h2 align="center">📊 Estado de Desarrollo del Proyecto</h2>
 
-<table align="center" width="80%">
-  <tr>
-    <td align="center" width="50%">
-      <strong>Diseño UI / Glassmorphism</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #7b2ffc, #00d2ff); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Completado</span>
-    </td>
-    <td align="center" width="50%">
-      <strong>Diagramas Interactivos (HTML)</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #00d2ff, #00ff87); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Completado</span>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <strong>Adaptación Responsive (Móvil/Tablet)</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #00ff87, #00c6ff); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Adaptado</span>
-    </td>
-    <td align="center" width="50%">
-      <strong>Documentación README</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #a855f7, #38bdf8); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Completa</span>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <strong>Implementación Modo Oscuro/Claro</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #ff7b54, #ffb26b); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Implementado</span>
-    </td>
-    <td align="center" width="50%">
-      <strong>Sistema Multi-Idioma (ES/EN)</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #f6d365, #fda085); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Implementado</span>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <strong>Partículas Interactivas</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #2193b0, #6dd5ed); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Reactivas</span>
-    </td>
-    <td align="center" width="50%">
-      <strong>Integración PDF / Google Docs</strong><br>
-      <div style="width: 90%; background-color: #e0e0e0; border-radius: 10px; margin: 5px auto; height: 18px; overflow: hidden;">
-        <div style="width: 100%; height: 100%; background: linear-gradient(90deg, #4facfe, #00f2fe); border-radius: 10px;"></div>
-      </div>
-      <span style="font-size: 0.8rem; font-weight: bold;">✅ 100% Integrado</span>
-    </td>
-  </tr>
-</table>
-
-<br>
+<p align="center">
+  <img src="https://img.shields.io/badge/Diseño_UI_Glassmorphism-100%25-success?style=for-the-badge&logo=figma&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Diagramas_Interactivos-100%25-success?style=for-the-badge&logo=html5&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Adaptación_Responsive-100%25-success?style=for-the-badge&logo=googlechrome&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Documentación_README-100%25-success?style=for-the-badge&logo=readme&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Modo_Oscuro_Claro-100%25-success?style=for-the-badge&logo=github&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Sistema_Multi_Idioma-100%25-success?style=for-the-badge&logo=googletranslate&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Partículas_Interactivas-100%25-success?style=for-the-badge&logo=javascript&logoColor=white">
+  <br>
+  <img src="https://img.shields.io/badge/Integración_PDF-100%25-success?style=for-the-badge&logo=adobeacrobatreader&logoColor=white">
+</p>
 
 <!-- ============================================ -->
 <!--          INSTALACIÓN Y ESTRUCTURA             -->
@@ -212,4 +161,4 @@ Si deseas ejecutar este proyecto en tu propio entorno:
 
 ```bash
 git clone https://github.com/andrea-lopez-dev/sigpaz.git
----
+
