@@ -28,7 +28,7 @@
 <!--          DEMO GIF                             -->
 <!-- ============================================ -->
 <p align="center">
-  <img src="docs/media/demo-web.gif" alt="Demo de la web interactiva" width="80%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+  <img src="docs/media/demo-docs.gif" alt="Demo de la web interactiva" width="80%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
 </p>
 <br>
 
@@ -149,6 +149,22 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 <!-- ============================================ -->
 <!--          NOTA CON ENLACE AL REPOSITORIO       -->
 <!-- ============================================ -->
-> 📌 **Nota: sidesea ver el codigo y el restod e la documentacion pueder dirigirse al respositorio [andrea-lopez-dev/sigpaz](https://github.com/andrea-lopez-dev/sigpaz) que todo se vea hermosos**
-
-<br>
+<div align="center">
+  <br>
+  <p style="font-size: 1.1em;">
+    📌 <b>Nota</b>
+  </p>
+  <p>
+    Para revisar el código completo y el resto de la documentación,<br>
+    diríjase al repositorio oficial:
+  </p>
+  <p>
+    <a href="https://github.com/andrea-lopez-dev/sigpaz" style="text-decoration: none;">
+      <b>github.com/andrea-lopez-dev/sigpaz</b>
+    </a>
+  </p>
+  <p style="color: #555; font-size: 0.95em;">
+    ✅ Material estructurado y diseñado para una consulta ágil y eficiente.
+  </p>
+  <br>
+</div>
