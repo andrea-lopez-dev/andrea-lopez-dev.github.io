@@ -150,7 +150,7 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 <!--          NOTA CON ENLACE AL REPOSITORIO       -->
 <!-- ============================================ -->
 <div align="center">
-  <br>
+  
   <p style="font-size: 1.1em;">
     📌 <b>Nota</b>
   </p>
@@ -166,5 +166,5 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
   <p style="color: #555; font-size: 0.95em;">
     ✅ Material estructurado y diseñado para una consulta ágil y eficiente.
   </p>
-  <br>
+  
 </div>
