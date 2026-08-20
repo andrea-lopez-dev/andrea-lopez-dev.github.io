@@ -79,11 +79,6 @@ Este repositorio contiene la documentación visual e interactiva del sistema **S
   </tr>
   <tr>
     <td align="center" width="33%">
-      <i class="fas fa-particles" style="color: #7b2ffc; font-size: 3rem;"></i><br>
-      <strong>Fondo Interactivo</strong><br>
-      <span style="font-size: 0.9rem; color: #666;">Partículas reactivas</span>
-    </td>
-    <td align="center" width="33%">
       <i class="fas fa-arrow-up-right-from-square" style="color: #00d2ff; font-size: 3rem;"></i><br>
       <strong>Enlaces Externos</strong><br>
       <span style="font-size: 0.9rem; color: #666;">Abrir en nueva pestaña</span>
@@ -92,6 +87,11 @@ Este repositorio contiene la documentación visual e interactiva del sistema **S
       <i class="fas fa-mobile-alt" style="color: #00ff87; font-size: 3rem;"></i><br>
       <strong>100% Responsive</strong><br>
       <span style="font-size: 0.9rem; color: #666;">Diseño adaptado a móviles</span>
+    </td>
+    <td align="center" width="33%">
+      <i class="fas fa-particles" style="color: #7b2ffc; font-size: 3rem;"></i><br>
+      <strong>Fondo Interactivo</strong><br>
+      <span style="font-size: 0.9rem; color: #666;">Partículas reactivas</span>
     </td>
   </tr>
 </table>
@@ -130,35 +130,24 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 <br>
 
 <!-- ============================================ -->
-<!--          BARRAS DE PROGRESO DEL PROYECTO      -->
+<!--          BARRAS DE PROGRESO (VISIBLES)        -->
 <!-- ============================================ -->
-<h2 align="center">📊 Estado de Desarrollo del Proyecto</h2>
+<h2>📊 Estado de Desarrollo del Proyecto</h2>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Diseño_UI_Glassmorphism-100%25-success?style=for-the-badge&logo=figma&logoColor=white">
+<p align="left">
+  <a href="#"><img src="https://img.shields.io/badge/Diseño_UI_Glassmorphism-100%25-success?style=for-the-badge&logo=figma&logoColor=white&nbsp;"></a>
   <br>
-  <img src="https://img.shields.io/badge/Diagramas_Interactivos-100%25-success?style=for-the-badge&logo=html5&logoColor=white">
+  <a href="#"><img src="https://img.shields.io/badge/Diagramas_Interactivos-100%25-success?style=for-the-badge&logo=html5&logoColor=white&nbsp;"></a>
   <br>
-  <img src="https://img.shields.io/badge/Adaptación_Responsive-100%25-success?style=for-the-badge&logo=googlechrome&logoColor=white">
+  <a href="#"><img src="https://img.shields.io/badge/Adaptación_Responsive-100%25-success?style=for-the-badge&logo=googlechrome&logoColor=white&nbsp;"></a>
   <br>
-  <img src="https://img.shields.io/badge/Documentación_README-100%25-success?style=for-the-badge&logo=readme&logoColor=white">
+  <a href="#"><img src="https://img.shields.io/badge/Documentación_README-100%25-success?style=for-the-badge&logo=readme&logoColor=white&nbsp;"></a>
   <br>
-  <img src="https://img.shields.io/badge/Modo_Oscuro_Claro-100%25-success?style=for-the-badge&logo=github&logoColor=white">
+  <a href="#"><img src="https://img.shields.io/badge/Modo_Oscuro_Claro-100%25-success?style=for-the-badge&logo=github&logoColor=white&nbsp;"></a>
   <br>
-  <img src="https://img.shields.io/badge/Sistema_Multi_Idioma-100%25-success?style=for-the-badge&logo=googletranslate&logoColor=white">
+  <a href="#"><img src="https://img.shields.io/badge/Sistema_Multi_Idioma-100%25-success?style=for-the-badge&logo=googletranslate&logoColor=white&nbsp;"></a>
   <br>
-  <img src="https://img.shields.io/badge/Partículas_Interactivas-100%25-success?style=for-the-badge&logo=javascript&logoColor=white">
-  <br>
-  <img src="https://img.shields.io/badge/Integración_PDF-100%25-success?style=for-the-badge&logo=adobeacrobatreader&logoColor=white">
+  <a href="#"><img src="https://img.shields.io/badge/Partículas_Interactivas-100%25-success?style=for-the-badge&logo=javascript&logoColor=white&nbsp;"></a>
 </p>
 
-<!-- ============================================ -->
-<!--          INSTALACIÓN Y ESTRUCTURA             -->
-<!-- ============================================ -->
-## 🚀 Instalación y Uso Local
-
-Si deseas ejecutar este proyecto en tu propio entorno:
-
-```bash
-git clone https://github.com/andrea-lopez-dev/sigpaz.git
-
+<br>
