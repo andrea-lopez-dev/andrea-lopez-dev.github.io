@@ -149,8 +149,7 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 <!--          NOTA CON ENLACE AL REPOSITORIO       -->
 <!-- ============================================ -->
 
-📌 **Nota**  
-Para revisar el código completo y el resto de la documentación,  
+📌 **Nota**: Para revisar el código completo y el resto de la documentación,  
 diríjase al repositorio oficial:  
 
 👉 [**andrea-lopez-dev/sigpaz**](https://github.com/andrea-lopez-dev/sigpaz)  
