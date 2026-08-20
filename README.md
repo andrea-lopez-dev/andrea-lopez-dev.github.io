@@ -36,67 +36,14 @@
 <br>
 
 <!-- ============================================ -->
-<!--          GIF DEMO (Comentado)                 -->
-<!-- ============================================ -->
-<!-- 
-<p align="center">
-  <img src="docs/media/demo-web.gif" alt="Demo de la web interactiva" width="80%" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-</p>
-<br> 
--->
-
-<!-- ============================================ -->
 <!--          DESCRIPCIÓN                          -->
 <!-- ============================================ -->
 ## 📖 Descripción
 
-Este repositorio contiene la documentación visual e interactiva del sistema **SIGPAZ**. A través de una interfaz web moderna y responsiva con estilo **Glassmorphism**, podrás explorar los diferentes diagramas que componen la arquitectura del software y su base de datos, todo desde tu navegador sin necesidad de instalar nada.
+Este repositorio contiene la documentación interactiva del sistema **SIGPAZ**. A través de una interfaz web moderna y responsiva con estilo **Glassmorphism**, podrás explorar los diferentes diagramas que componen la arquitectura del software y su base de datos, todo desde tu navegador sin necesidad de instalar nada.
 
 <br>
 
-<!-- ============================================ -->
-<!--          CARACTERÍSTICAS DESTACADAS           -->
-<!-- ============================================ -->
-<h2 align="center">✨ Características Destacadas</h2>
-
-<table align="center" width="100%">
-  <tr>
-    <td align="center" width="33%">
-      <i class="fas fa-magic" style="color: #7b2ffc; font-size: 3rem;"></i><br>
-      <strong>Glassmorphism</strong><br>
-      <span style="font-size: 0.9rem; color: #666;">Efecto vidrio moderno</span>
-    </td>
-    <td align="center" width="33%">
-      <i class="fas fa-moon" style="color: #00d2ff; font-size: 3rem;"></i><br>
-      <strong>Modo Oscuro</strong><br>
-      <span style="font-size: 0.9rem; color: #666;">Switch automático</span>
-    </td>
-    <td align="center" width="33%">
-      <i class="fas fa-language" style="color: #00ff87; font-size: 3rem;"></i><br>
-      <strong>Multi-Idioma</strong><br>
-      <span style="font-size: 0.9rem; color: #666;">Español / English</span>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="33%">
-      <i class="fas fa-arrow-up-right-from-square" style="color: #00d2ff; font-size: 3rem;"></i><br>
-      <strong>Enlaces Externos</strong><br>
-      <span style="font-size: 0.9rem; color: #666;">Abrir en nueva pestaña</span>
-    </td>
-    <td align="center" width="33%">
-      <i class="fas fa-mobile-alt" style="color: #00ff87; font-size: 3rem;"></i><br>
-      <strong>100% Responsive</strong><br>
-      <span style="font-size: 0.9rem; color: #666;">Diseño adaptado a móviles</span>
-    </td>
-    <td align="center" width="33%">
-      <i class="fas fa-particles" style="color: #7b2ffc; font-size: 3rem;"></i><br>
-      <strong>Fondo Interactivo</strong><br>
-      <span style="font-size: 0.9rem; color: #666;">Partículas reactivas</span>
-    </td>
-  </tr>
-</table>
-
-<br>
 
 <!-- ============================================ -->
 <!--          WEB DE DOCUMENTACIÓN                 -->
@@ -135,19 +82,20 @@ También puedes visualizar todos los diagramas del sistema en formato PDF, sin n
 <h2>📊 Estado de Desarrollo del Proyecto</h2>
 
 <p align="left">
-  <a href="#"><img src="https://img.shields.io/badge/Diseño_UI_Glassmorphism-100%25-success?style=for-the-badge&logo=figma&logoColor=white&nbsp;"></a>
+  <img src="https://img.shields.io/badge/Diseño_UI_Glassmorphism-100%25-success?style=for-the-badge&logo=figma&logoColor=white">
   <br>
-  <a href="#"><img src="https://img.shields.io/badge/Diagramas_Interactivos-100%25-success?style=for-the-badge&logo=html5&logoColor=white&nbsp;"></a>
+  <img src="https://img.shields.io/badge/Diagramas_Interactivos-100%25-success?style=for-the-badge&logo=html5&logoColor=white">
   <br>
-  <a href="#"><img src="https://img.shields.io/badge/Adaptación_Responsive-100%25-success?style=for-the-badge&logo=googlechrome&logoColor=white&nbsp;"></a>
+  <img src="https://img.shields.io/badge/Adaptación_Responsive-100%25-success?style=for-the-badge&logo=googlechrome&logoColor=white">
   <br>
-  <a href="#"><img src="https://img.shields.io/badge/Documentación_README-100%25-success?style=for-the-badge&logo=readme&logoColor=white&nbsp;"></a>
+  <img src="https://img.shields.io/badge/Documentación_README-100%25-success?style=for-the-badge&logo=readme&logoColor=white">
   <br>
-  <a href="#"><img src="https://img.shields.io/badge/Modo_Oscuro_Claro-100%25-success?style=for-the-badge&logo=github&logoColor=white&nbsp;"></a>
+  <img src="https://img.shields.io/badge/Modo_Oscuro_Claro-100%25-success?style=for-the-badge&logo=github&logoColor=white">
   <br>
-  <a href="#"><img src="https://img.shields.io/badge/Sistema_Multi_Idioma-100%25-success?style=for-the-badge&logo=googletranslate&logoColor=white&nbsp;"></a>
+  <img src="https://img.shields.io/badge/Sistema_Multi_Idioma-100%25-success?style=for-the-badge&logo=googletranslate&logoColor=white">
   <br>
-  <a href="#"><img src="https://img.shields.io/badge/Partículas_Interactivas-100%25-success?style=for-the-badge&logo=javascript&logoColor=white&nbsp;"></a>
+  <img src="https://img.shields.io/badge/Partículas_Interactivas-100%25-success?style=for-the-badge&logo=javascript&logoColor=white">
 </p>
 
 <br>
+
