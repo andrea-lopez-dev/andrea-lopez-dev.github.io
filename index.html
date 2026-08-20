@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentación - SIGPAZ</title>
     
-    <!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-<meta name="theme-color" content="#ffffff">
+    <!-- Favicon (Rutas relativas a la carpeta docs/media) -->
+    <link rel="icon" type="image/x-icon" href="./docs/media/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./docs/media/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./docs/media/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./docs/media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./docs/media/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./docs/media/android-chrome-512x512.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -295,7 +295,7 @@
             flex-grow: 1;
         }
 
-        /* ===== BOTÓN VER (La flecha también se acerca) ===== */
+        /* ===== BOTÓN VER (Con el icono de Enlace Externo) ===== */
         .card-btn {
             display: inline-flex;
             align-items: center;
@@ -323,7 +323,6 @@
             margin-bottom: 0;
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             filter: none !important;
-            /* Reseteamos el transform del hover del icono padre para que no interfiera */
             transform: none !important;
         }
 
@@ -429,7 +428,7 @@
             <p id="mainSubtitle">Arquitectura de software y bases de datos a tu alcance</p>
         </div>
 
-        <!-- Grid de Tarjetas -->
+        <!-- Grid de Tarjetas (Con el nuevo icono de enlace externo) -->
         <div class="grid-cards">
             <a href="./docs/diagrams/DIAGRAMA_DE_CASOS_DE_USO.html" target="_blank" class="card">
                 <div>
@@ -437,7 +436,7 @@
                     <h3 id="card1Title">Casos de Uso</h3>
                     <p id="card1Desc">Interacciones entre actores y el sistema para definir requerimientos funcionales.</p>
                 </div>
-                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+                <span class="card-btn">Ver <i class="fas fa-arrow-up-right-from-square"></i></span>
             </a>
             <a href="./docs/diagrams/DIAGRAMA_DE_CLASES_COMPLETO.html" target="_blank" class="card">
                 <div>
@@ -445,7 +444,7 @@
                     <h3 id="card2Title">Diagrama de Clases</h3>
                     <p id="card2Desc">Estructura estática del sistema, mostrando clases, atributos y relaciones.</p>
                 </div>
-                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+                <span class="card-btn">Ver <i class="fas fa-arrow-up-right-from-square"></i></span>
             </a>
             <a href="./docs/diagrams/ESQUEMA_DE_LA_BD_ORDENADO.html" target="_blank" class="card">
                 <div>
@@ -453,7 +452,7 @@
                     <h3 id="card3Title">Esquema BD</h3>
                     <p id="card3Desc">Representación ordenada de las tablas, columnas y tipos de datos de la base.</p>
                 </div>
-                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+                <span class="card-btn">Ver <i class="fas fa-arrow-up-right-from-square"></i></span>
             </a>
             <a href="./docs/diagrams/MODELO_ER_ORDENADO.html" target="_blank" class="card">
                 <div>
@@ -461,7 +460,7 @@
                     <h3 id="card4Title">Modelo ER</h3>
                     <p id="card4Desc">Entidades, atributos y relaciones clave para la persistencia de datos.</p>
                 </div>
-                <span class="card-btn">Ver <i class="fas fa-arrow-right"></i></span>
+                <span class="card-btn">Ver <i class="fas fa-arrow-up-right-from-square"></i></span>
             </a>
         </div>
 
